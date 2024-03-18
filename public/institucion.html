@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/carrusel.css" rel="stylesheet">
+  <script src="js/flowbite/dist/flowbite.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="bg-blue-950 border-gray-200 ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <a href="index.html" class="flex items-center">
+      <img src="img/logo-mingob@2x.png" class="object-cover w-auto h-16" alt="Gobierno de Guatemala" />
+    </a>
+    <div class="flex md:order-2">
+      <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-white  hover:bg-gray-400 hover:text- focus:outline-none focus:ring-4 focus:ring-gray-200  rounded-lg text-sm p-2.5 mr-1" >
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+        </svg>
+        <span class="sr-only">Buscar</span>
+      </button>
+      <div class="relative hidden md:block">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+          <span class="sr-only">Search icon</span>
+        </div>
+        <input type="text" id="search-navbar" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Buscar...">
+      </div>
+      <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-search" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+      <div class="relative mt-3 md:hidden">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+        </div>
+        <input type="text" id="search-navbar2" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Buscar...">
+      </div>
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+        <li>
+          <a href="tel:+502 2412-8800" class="block py-2 pl-3 pr-4 text-white  hover:text-blue-700  md:hover:bg-transparent md:p-0">TELÉFONO 2412-8800</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+<nav class="bg-white bg-cover bg-right bg-no-repeat bg-[url('background-item3.svg')] border-gray-200 ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <a href="index.html" class="flex items-center">
+      <img src="img/logo-upcv@2x.png" class="object-cover w-auto h-16" alt="Gobierno de Guatemala" />
+    </a>
+
+    <div class="flex md:order-2">
+      <button data-collapse-toggle="navbar-search2" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-search2" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+
+
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search2">
+      <div class="relative mt-3 md:hidden">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        </div>
+      </div>
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-blue-900 rounded hover:text-blue-700  md:hover:bg-transparent md:border-0  md:p-0 md:w-auto">ACERCA DE NOSOTROS <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-white bg-blue-950 " aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="#institucion" class="block px-4 py-2 hover:bg-gray-400 ">INSTITUCIÓN</a>
+              </li>
+              <li>
+                <a href="#base-juridica" class="block px-4 py-2 hover:bg-gray-400 ">BASE JURÍDCA</a>
+              </li>
+              <li>
+                <a href="#filosofia" class="block px-4 py-2 hover:bg-gray-400 ">FILOSOFÍA INSTITUCIONAL</a>
+              </li>
+              <li>
+                <a href="#organigrama" class="block px-4 py-2 hover:bg-gray-400 ">ORGANIGRAMA</a>
+              </li>
+              <li>
+                <a href="#documentos" class="block px-4 py-2 hover:bg-gray-400 ">DOCUMENTOS</a>
+              </li>
+              <li>
+                <a href="#politicas" class="block px-4 py-2 hover:bg-gray-400 ">POLÍTICAS PÚBLICAS MUNICIPALES</a>
+              </li>
+              <li>
+                <a href="acerca-de-nosotros-mision-y-vision-ministerial.html#vision-mision" class="block px-4 py-2 hover:bg-gray-400 ">MISIÓN Y VISIÓN MINISTERIAL</a>
+              </li>
+              <li>
+                <a href="index.html#seccion-acciones" class="block px-4 py-2 hover:bg-gray-400 ">ACCIONES DE IMPACTO</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-bold text-blue-900 rounded hover:text-blue-700  md:hover:bg-transparent md:border-0  md:p-0 md:w-auto">NUESTROS PROGRAMAS <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-white bg-blue-950 " aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="index.html#seccion-programas" class="block px-4 py-2 hover:bg-gray-400">TODOS LOS PROGRAMAS</a>
+              </li>
+              <li>
+                <a href="nuestros-programas-propevi.html" class="block px-4 py-2 hover:bg-gray-400">PROGRAMA DE PREVENCIÓN Y ERRADICACIÓN DE LA VIOLENCIA INTRAFAMILIAR</a>
+              </li>
+              <li>
+                <a href="https://mingob.gob.gt/centros-recreativos-piramide-beneficiaran-a-jovenes-de-villa-nueva/" class="block px-4 py-2 hover:bg-gray-400">PROYECTO MODELO DE CONVIVENCIA CIUDADANA</a>
+              </li>
+              <li>
+                <a href="https://mingob.gob.gt/wp-content/uploads/2020/09/PLANEA-Prevencio%CC%81n-del-Embarazo-en-Adolecentes.pdf" class="block px-4 py-2 hover:bg-gray-400">PREVENCIÓN DEL EMBARAZO EN ADOLESCENTES</a>
+              </li>
+              <li>
+                <a href="https://mingob.gob.gt/campana-hagamos-visible-lo-invisible-fortalece-la-concientizacion-sobre-migraciones/" class="block px-4 py-2 hover:bg-gray-400">CAMPAÑA PARA CONCIENTIZAR Y EVITAR LAS MIGRACIONES IRREGULARES</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="contactanos.html#contacto" class="block py-2 pl-3 pr-4 font-bold text-blue-900  hover:text-blue-700  md:hover:bg-transparent md:p-0">CONTÁCTANOS</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/upcvguatemala/?hl=es" title="Instagram UPCV" target="_blank" class="block py-2 pl-3 pr-4 font-bold text-blue-900  hover:text-blue-700  md:hover:bg-transparent md:p-0">
+            <img src="img/instagram-icon@2x.png" class="object-cover w-7 h-7" alt="Instagram UPCV"  />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/UPCVGuatemala/?locale=es_LA" title="Facebook UPCV" target="_blank" class="block py-2 pl-3 pr-4 font-bold text-blue-900  hover:text-blue-700  md:hover:bg-transparent md:p-0">
+            <img src="img/facebook-icon@2x.png" class="object-cover w-7 h-7" alt="Facebook UPCV"  />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/UPCV_gt?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="Twitter UPCV" target="_blank" class="block py-2 pl-3 pr-4 font-bold text-blue-900  hover:text-blue-700  md:hover:bg-transparent md:p-0">
+            <img src="img/twitter-icon@2x.png" class="object-cover w-7 h-7" alt="Twitter UPCV"  />
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<section id="institucion" class="bg-white bg-cover bg-left-top  bg-no-repeat bg-[url('background-images--landing.svg')]">
+  <div class="py-4 px-full">
+    <img src="img/transparency1@2x.png" class="object-cover h-auto w-full shadow-lg">
+  </div>
+</section>
+
+
+<section id="filosofia" class="bg-white bg-cover bg-left-top  bg-no-repeat bg-[url('background-item.svg')]">
+  <div class="py-8 px-16 mx-auto max-w-screen-xl lg:py-16">
+
+    <h1 class="text-3xl xl:text-5xl lg:text-3xl md:text-2xl sm:text-xl text-blue-900 text-center font-sans font-black mt-2 mb-4">
+      FILOSOFÍA INSTITUCIONAL
+    </h1>
+
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4">
+      Objetivo
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Cumplir con el mandato del Ministerio de Gobernación en la formulación
+      de una estrategia de seguridad de las personas y de sus bienes en
+      coordinación con las comunidades para su oportuna implementación; con
+      énfasis en la seguridad ciudadana con enfoque de la prevención de la
+      violencia, a través de la promoción de la cultura de prevención.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4">Misión</p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Somos dentro de la estructura del ejecutivo, la entidad que asesora,
+      coordina, organiza y facilita la participación en las comunidades,
+      municipios y departamentos del país, buscando alianzas con
+      instituciones gubernamentales y no gubernamentales para la
+      construcción de una cultura de prevención por convicción de la
+      violencia y el delito.
+    </p>
+
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4">Visión</p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Ser la institución referente que orienta y promueve una cultura de
+      prevención por convicción de la violencia y el delito, facilitando la
+      convivencia pacífica de las y los ciudadanos con la interrelación de
+      instituciones públicas y privadas con el poder local
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4">Valores</p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Liderazgo, capacidad de influenciar a otros a través de la
+      inspiración, motivado por una visión generada por una pasión creada
+      por un propósito.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Servicio, acción que conlleva calidad, eficiencia, rapidez y
+      sensibilidad, en las relaciones laborales entre los compañeros de
+      trabajo e instituciones relacionadas con la estructuración,
+      implementación y ejecución de políticas relacionadas con la prevención
+      del delito, a efecto que la población perciba los beneficios y logros
+      que la Unidad para la Prevención Comunitaria de la Violencia.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Calidad, acción representada directamente ante la población, la cual
+      debe concretizarse de manera rápida y cumplida, mediante la
+      observancia del marco que regula el funcionamiento de la Unidad para
+      la Prevención Comunitaria de la Violencia, en todas las etapas
+      medulares que integran el ejercicio de su actuar.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Respeto, faculta al ser humano para el reconocimiento, aceptación,
+      aprecio y valoración de las cualidades de los demás y sus derechos, ya
+      sea por su conocimiento, experiencia, valor como personas o
+      capacidades diferentes.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Confianza, exige estar conscientes de que en cada actuación hay que
+      asegurar la confianza en lo que se hace y en los resultados esperados,
+      y con el compromiso de garantizarle a la sociedad que se cumple con la
+      ley.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Lealtad, desempeñar un cargo público en la Unidad para la Prevención
+      Comunitaria de la Violencia, conlleva absoluta lealtad a la misión y
+      visión de la misma; así como, en toda intervención o actuación procede
+      anteponer el interés social o colectivo a cualquier interés personal o
+      privado, sea éste de naturaleza económica, o de relación con terceros
+      o de cualquier otra índole.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Honestidad, todo laborante de la Unidad para la Prevención Comunitaria
+      de la Violencia está obligado a actuar, tanto en sus funciones
+      públicas como en su vida privada siendo escrupuloso en evitar
+      actuaciones que pudieran dar lugar a la impresión de que sus
+      relaciones sociales, de negocios, de familia o amistad influyen o han
+      influido en alguna forma en el resultado de sus actuaciones oficiales.
+    </p>
+
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Integridad, en el contexto del ejercicio de las funciones públicas,
+      incluye, entre otros actos, el compromiso de no colocarse bajo ninguna
+      circunstancia que pueda influir en la toma de decisiones y el
+      desempeño de las obligaciones. Las circunstancias pueden incluir
+      obligaciones financieras u otras con terceros.
+    </p>
+
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Responsabilidad, en el contexto del ejercicio de las funciones
+      públicas, incluye, entre otros actos, el observar los estándares que
+      establece la ley y las normas de la Institución; y desplegar todo el
+      esfuerzo necesario para ejercer con excelencia las funciones
+      encomendadas.
+    </p>
+    <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+      Transparencia, las decisiones que se adoptan en todo el andamiaje de
+      la Institución están sujetas al escrutinio público. En consecuencia,
+      se exige documentar los actos de la gestión pública, permitiendo la
+      publicidad de los mismos, salvo las excepciones establecidas por la
+      ley. Lo anterior en aras de honrar el cargo público que se ocupa, y
+      fortalecer el respeto y la credibilidad en la Institución.
+    </p>
+    <div class="flex w-full  justify-center items-center">
+      <img class="lg:h-96 lg:w-auto  md:h-80 md:w-80 border p-1 px-1 bg-sky-900 rounded-lg shadow-lg" src="img/image-6@2x.png" alt="misión y visión">
+    </div>
+
+    <div class="flex justify-end">
+      <a href="#institucion" class="text-gray-600 px-4 py-2 rounded"><img class="h-11 xl:h-16 lg:h-14 md:h-12 sm:h-11" src="img/home-1@2x.png" alt=""> </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="base-juridica" class="bg-white bg-cover bg-left-top  bg-no-repeat bg-[url('background-item.svg')]">
+  <div class="py-8 px-16 mx-auto max-w-screen-xl  lg:py-16">
+
+        <h1 class="text-3xl xl:text-5xl lg:text-3xl md:text-2xl sm:text-xl text-blue-900 text-center font-sans font-black mt-2 mb-4">BASE JURÍDICA</h1>
+
+         <p class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4"> La Unidad para la Prevención Comunitaria de la Violencia, rige su funcionamiento con base en los instrumentos jurídicos y administrativos siguientes:</p>
+         <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+           Constitución Política de la República de Guatemala.
+         </li>
+         <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+           Decreto número 114-97 Ley del Organismo Ejecutivo.
+         </li>
+          <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+            Acuerdo Gubernativo No. 635-2007 Reglamento Orgánico del Ministerio de Gobernación. Publicado el 14 de enero del 2008
+          </li>
+          <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+            Acuerdo Ministerial No. 542-2008, Creación de la Unidad para la
+            Prevención Comunitaria de la Violencia, publicado el 21 de febrero de
+            2008. Reformado por el Acuerdo Ministerial No. 95-2013, publicado el
+            20 de febrero de 2013.
+          </li>
+          <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+            Resolución Ministerial No. 001088. Aprobación del Manual de
+            Organización y Puestos de la Unidad para la Prevención Comunitaria de
+            la Violencia del Ministerio de Gobernación, de fecha 01 de septiembre
+            del 2010.
+          </li>
+
+          <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+            Se prorroga el plazo por cinco años, de conformidad con lo establecido
+            en el artículo 1 del Acuerdo Ministerial Número 530-2022 el
+            22-02-2023.
+          </li>
+
+           <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+             Otras disposiciones legales y administrativas afines.
+           </li>
+
+    <div class="flex w-full  justify-center items-center">
+          <img class="lg:h-96 lg:w-auto  md:h-80 md:w-80 border p-1 px-1 bg-sky-900 rounded-lg shadow-lg" src="img/image-6@2x.png" alt="gobierno">
+    </div>
+
+    <div class="flex justify-end">
+      <a href="#institucion" class="text-gray-600 px-4 py-2 rounded"><img class="h-11 xl:h-16 lg:h-14 md:h-12 sm:h-11" src="img/home-1@2x.png" alt=""> </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="organigrama" class="bg-white bg-cover bg-left-top  bg-no-repeat bg-[url('background-images--landing3.svg')]">
+  <div class="py-8 px-16 mx-auto max-w-screen-xl  lg:py-16">
+
+    <h1 class="text-3xl xl:text-5xl lg:text-3xl md:text-2xl sm:text-xl text-blue-900 text-center font-sans font-black mt-2 mb-4">ORGANIGRAMA</h1>
+
+    <div class="flex w-full  justify-center items-center">
+      <img class="h-80 w-auto lg:h-auto lg:w-auto md:h-80 md:w-80 border p-1 px-1 bg-sky-900 rounded-lg shadow-lg" src="img/image-8@2x.png" alt="ORGANIGRAMA UPCV">
+    </div>
+
+    <div class="flex justify-end">
+      <a href="#institucion" class="text-gray-600 px-4 py-2 rounded"><img class="h-11 xl:h-16 lg:h-14 md:h-12 sm:h-11" src="img/home-1@2x.png" alt=""> </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="documentos" class="bg-blue-950 bg-contain bg-center bg-no-repeat bg-center bg-[url('upcv-opcity-ai-background@2x.png')]">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+    <div class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 mb-4">
+      <div>
+        <h1 class="text-3xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-white font-sans font-black mt-3 mb-3 mt-2 ">DOCUMENTOS</h1>
+      </div>
+    </div>
+    <div class="carousel-container">
+      <div class="flex  justify-end">
+        <div class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-2">
+
+          <button class="carousel-btn prev-btn bg-gray-400 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
+            &lt;
+          </button>
+
+          <button class="carousel-btn next-btn bg-gray-400  hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
+            &gt;
+          </button>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="card">
+          <a href="#" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 border-4  border-white hover:border-blue-300">
+              <div class="bg-gray-500 flex flex-col justify-center items-center">
+                <img class="h-28 xl:h-60 lg:h-56 md:h-48 sm:h-28 w-56" src="img/image-9@2x.png" alt="">
+              </div>
+              <div class="px-3 py-3  h-28 xl:h-40 lg:h-36 md:32 sm:h-28">
+                <div class="font-bold text-white  text-xs xl:text-xl lg:text-lg md:text-sm sm:text-xs mb-2">ESTRATEGIA NACIONAL</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 border-4  border-white hover:border-blue-300">
+              <div class="bg-gray-500 flex flex-col justify-center items-center">
+                <img class="h-28 xl:h-60 lg:h-56 md:h-48 sm:h-28 w-56" src="img/image-10@2x.png" alt="">
+              </div>
+              <div class="px-3 py-3  h-28 xl:h-40 lg:h-36 md:32 sm:h-28">
+                <div class="font-bold text-white  text-xs xl:text-xl lg:text-lg md:text-sm sm:text-xs mb-2">POLÍTICA NACIONAL</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 border-4  border-white hover:border-blue-300 w-auto">
+              <div class="bg-gray-500 flex flex-col justify-center items-center">
+                <img class="h-28 xl:h-60 lg:h-56 md:h-48 sm:h-28 w-56" src="img/image-11@2x.png" alt="">
+              </div>
+              <div class="px-3 py-3  h-28 xl:h-40 lg:h-36 md:32 sm:h-28">
+                <div class="font-bold text-white  text-xs xl:text-xl lg:text-lg md:text-sm sm:text-xs mb-2">GUÍA DE PREVENCIÓN 1</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 border-4 border-white hover:border-blue-300">
+              <div class="bg-gray-500 flex flex-col justify-center items-center">
+                <img class="h-28 xl:h-60 lg:h-56 md:h-48 sm:h-28 w-56" src="img/image-12@2x.png" alt="">
+              </div>
+              <div class="px-3 py-3  h-28 xl:h-40 lg:h-36 md:32 sm:h-28">
+                <div class="font-bold text-white  text-xs xl:text-xl lg:text-lg md:text-sm sm:text-xs mb-2">GUÍA DE PREVENCIÓN 2</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-400 border-4  border-white hover:border-blue-300">
+              <div class="bg-gray-500 flex flex-col justify-center items-center">
+                <img class="h-28 xl:h-60 lg:h-56 md:h-48 sm:h-28 w-56" src="img/image-13@2x.png" alt="">
+              </div>
+              <div class="px-3 py-3  h-28 xl:h-40 lg:h-36 md:32 sm:h-28">
+                <div class="font-bold text-white text-xs xl:text-xl lg:text-lg md:text-sm sm:text-xs mb-2">POLITICA NACIONAL</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+  </div>
+
+      <div class="flex justify-end">
+        <a href="#institucion" class="text-gray-600 px-4 py-2 rounded"><img class="h-11 xl:h-16 lg:h-14 md:h-12 sm:h-11" src="img/home-1@2x.png" alt=""> </a>
+      </div>
+  </div>
+
+  </div>
+
+  </div>
+</section>
+
+
+<section id="politicas" class="bg-white bg-cover bg-left-top  bg-no-repeat bg-[url('background-item.svg')]">
+  <div class="py-8 px-1 mx-auto max-w-screen-xl  lg:py-16">
+    <h1 class="text-3xl xl:text-5xl lg:text-3xl md:text-2xl sm:text-xl text-blue-900 text-center font-sans font-black mt-4 mb-6">POLÍTICAS
+      PÚBLICAS MUNICIPALES</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-1">
+      <div>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          01 Guatemala
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          02 El Progreso
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          03 Sacatepéquez
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          04 Chimaltenango
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          05 Escuintla
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          06 Santa Rosa
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          07 Sololá
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          08 Totonicapán
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          09 Quetzaltenango
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          10 Suchitepéquez
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          11 Retalhuleu
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          12 San Marcos
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          13 Huehuetenango
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          14 Quiché
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          15 Baja Verapaz
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          16 Alta Verapaz
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          17 Petén
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          18 Izabal
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          19 Zacapa
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          20 Chiquimula
+        </li>
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          21 Jalapa
+        </li>
+
+        <li class="text-xl text-justify xl:text-3xl lg:text-2xl md:text-xl sm:text-lg mb-4 px-8">
+          22 Jutiapa
+        </li>
+
+      </div>
+
+      <div>
+        <div class="flex justify-center items-center">
+          <img class="w-full  h-full border p-1 bg-sky-900 rounded-lg shadow-lg" src="img/image-16@2x.png" alt="politicas publicas municipales">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="flex justify-end">
+      <a href="#institucion" class="text-gray-600 px-4 py-2 rounded"><img class="h-11 xl:h-16 lg:h-14 md:h-12 sm:h-11" src="img/home-1@2x.png" alt=""> </a>
+    </div>
+  </div>
+</section>
+
+
+
+<div  id="myModal" class="fixed z-10 inset-0 overflow-y-auto ease-out duration-400 h-auto w-auto ">
+  <div class="flex justify-center  pt-4 px-4 pb-20 text-center ">
+    <div class="fixed inset-0">
+      <div class="absolute inset-0 "></div>
+    </div>
+    <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+      <form>
+        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="mb-4">
+            <ul id="results" class=" text-lg  text-blue-950 font-black p-2"></ul>
+          </div>
+          <div class="bg-blue-950 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                        <span class="flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto">
+                                <button id="closeModalButton" type="button" class="inline-flex justify-center w-full  bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-md  px-4 py-2  text-base leading-6 font-medium  shadow-sm  focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5">CERRAR</button>
+                        </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer class="bg-blue-950  shadow">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="" class="flex items-center mb-4 sm:mb-0">
+        <img src="img/logo-mingob@2x.png" class="object-cover w-auto h-16" alt="Gobierno de Guatemala" />
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+        <li>
+          <a href="" class="mr-4 hover:underline md:mr-6 ">Comunicación social -UPCV-2023</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  </div>
+</footer>
+
+
+<script src="js/carrusel-institucion.js"></script>
+<script src="js/buscador.js"></script>
+</body>
+
+</html>
